@@ -26,8 +26,9 @@
 <div class="toc"> <h4 class="toc">Contents</h4>
 <p>These Release Notes contain the following information:</p>
 
-  <ul><li><a href="#upgrade">Important Upgrade Information</a></li>
+<ul><li><a href="#upgrade">Important Upgrade Information</a></li>
 
+	<li><a href="#ee114-11445">Magento Commerce 1.14.4.5 Release Notes</a></li>
 	<li><a href="#ee114-11444">Magento Commerce 1.14.4.4 Release Notes</a></li>
 	<li><a href="#ee114-11443">Magento Commerce 1.14.4.3 Release Notes</a></li>
 	<li><a href="#ee114-11442">Magento Commerce 1.14.4.2 Release Notes</a></li>
@@ -58,6 +59,12 @@
 
 <h2 id="upgrade">Important Upgrade Information</h2>
 <div class="msg-box important"><img src="{{ site.baseurl }}/guides/m1x/images/icon-important.png" alt="important" align="left" width="40"><span><strong>Important</strong>: Use Magento Commerce 1.14.3.0 or later for <em>all new Magento Commerce installations and upgrades</em> to get the latest fixes, features, and security updates.</span></div>
+
+<h2 id="ee114-11445">Magento Commerce 1.14.4.5 Release Notes</h2>
+
+<p>This version (or patch SUPEE-11314, which applies to older versions of Magento) provides resolution of multiple critical security issues. These security enhancements help close cross-site scripting, arbitrary code execution, and sensitive data disclosure vulnerabilities as well as other security issues. </p>
+<p>We recommend upgrading your Magento store to this latest version.  See  <a href="https://helpx.adobe.com/security/products/magento/apsb20-22.html" target="_blank">Magento | APSB20-22</a> for a comprehensive discussion of these issues.</p>
+
 
 
 <h2 id="ee114-11444">Magento Commerce 1.14.4.4 Release Notes</h2>
@@ -329,7 +336,7 @@
 We have skipped release 1.14.3.5. 
 
 <h2 id="ee114-11434">Magento Commerce 1.14.3.4 Release Notes</h2>
- <p>This patch (SUPEE-9767 version 2) addresses both security and functional issues discovered when using the <code>SUPEE-9767</code> patch. We recommend upgrading your Magento store to this latest version.  
+ <p>This patch (SUPEE-9767 version 2) addresses both security and functional issues discovered when using the <code>SUPEE-9767</code> patch. We recommend upgrading your Magento store to this latest version.</p>
 
  Here are your upgrade options:
 
@@ -421,7 +428,7 @@ This patch is available from <a href="https://magento.com/tech-resources/downloa
 	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-9215" target="_blank">MPERF-9215</a>.  -->Auto-generated passwords are sent to new customers as expected.</li>
 	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-9214" target="_blank">MPERF-9214</a>.  -->The method <code>Mage_Api_Model_Server_Handler_Abstract::processingMethodResult()</code> accepts scalar and array values.</li>
 	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-9213" target="_blank">MPERF-9213</a>.  -->The default MySQL Full-Text search works as expected; it no longer returns all products.</li>
-	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-9184" target="_blank">MPERF-9184</a>.  -->Prevented a potential <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet" target="_blank">Cross-Site Request Forgery (CSRF)</a> vulnerability by changing the form key when a customer signs out of the storefront.</li>
+	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-9184" target="_blank">MPERF-9184</a>.  -->Prevented a potential Cross-Site Request Forgery (CSRF) vulnerability by changing the form key when a customer signs out of the storefront.</li>
 	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-8444" target="_blank">MPERF-8444</a>.  -->Prevented a potential <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)" target="_blank">Cross-Site Scripting (XSS)</a> vulnerability when adding a category.</li>
 	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-5893" target="_blank">MPERF-5893</a>.  -->Catalog price rules return the correct price.</li>
 	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-5352" target="_blank">MPERF-5352</a>.  -->Indexers now update all products instead of skipping the last product updated.</li>
@@ -468,7 +475,7 @@ This patch is available from <a href="https://magento.com/tech-resources/downloa
 	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-7707" target="_blank">MPERF-7707</a>. --> Resolved a potential man-in-the-middle vulnerability.</li>
 	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-7649" target="_blank">MPERF-7649</a>.  -->Resolved a potential PHP security vulnerability.</li>
 	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-8572" target="_blank">MPERF-8572</a>. --> An administrative user is no longer able to create a potential security vulnerability that used the block cache.</li>
-	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-8363" target="_blank">MPERF-8363</a>. --> Resolved a potential <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)" target="_blank">cross-site request forgery (CSRF)</a> vulnerability involving the wishlist.</li>
+	<li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-8363" target="_blank">MPERF-8363</a>. --> Resolved a potential cross-site request forgery (CSRF) vulnerability involving the wishlist.</li>
 	<li><!-- <a href="https://jira.corp.magento.com/browse/APPSEC-1484" target="_blank">APPSEC-1484</a>.  -->Resolved a potential remote code execution exploit.</li>
 	<li><!-- <a href="https://jira.corp.magento.com/browse/APPSEC-1517" target="_blank">APPSEC-1517</a>. --> It is no longer possible to  log in to a store as an existing customer using only an e-mail address.</li>
 
@@ -956,3 +963,6 @@ Magento thanks Tim Bezhashvyly for contributing to this fix.</li>
 <h2 id="oss">Open Source Software Licensing Agreements</h2>
 <p>Some versions of Magento Commerce use open source software licensing. Following are license agreements for that software.</p>
 <p><strong>Touch punch</strong>: This code is dual licensed under the MIT or GPL Version 2 licenses and is therefore free to use, modify and/or distribute, but if you include Touch Punch in other software packages or plugins, please include an attribution to the original software and a link to this <a href="http://touchpunch.furf.com/" target="_blank">Touch Punch website</a>.</p>
+
+</body>
+</html>
